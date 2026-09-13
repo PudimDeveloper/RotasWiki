@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WikiBot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <section>
+    <header>
+      <h1>Pesquisador de rotas</h1>
+    </header>
+    <main>
+      <textarea id="textarea" type="text"></textarea>
+      <div id="ferramentas">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="separador"></div>
+        <button type="reset"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div id="carregamento">
+        <p>Carregando</p>
+        <div id="barra">
+          <div id="preenchimento"></div>
+        </div>
+      </div>
+      
+      <iframe id="output"></iframe>
+    </main>
+    <footer>
+      <p>Todos os direitos reservados<br>&copy; PudimDeveloper<br>25-07-2026</p>
+      <p>WikiAPI - <a href="https://pypi.org/project/pywikibot/">pywikibot</a></p>
+    </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+pywikibot
+flask
+beautifulsoup4
+gunicorn

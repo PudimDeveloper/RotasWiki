@@ -1,0 +1,149 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary: #528dd3;
+  --secondary: #3174c539;
+  --dark: #1b4779;
+  --a: #0b5180;
+  --back: #5f82a1;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--primary);
+  color: var(--dark);
+  text-align: center;
+  cursor: larger;
+  width: 100%;
+}
+
+footer a {
+  color: var(--a);
+  cursor: pointer;
+}
+footer a:active {
+  color: blue;
+}
+footer a:hover {
+  color: cyan;
+}
+
+header {
+  background-color: var(--primary);
+  padding: 10px;
+  margin: 0 0 10px 0;
+  color: var(--dark);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  display: flex;
+}
+
+textarea {
+  resize: none;
+  width: 50%;
+  height: 30px;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  margin: 10px;
+}
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--secondary);
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 18px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  backdrop-filter: blur(5px);
+}
+button:hover {
+  background-color: var(--secondary);
+}
+
+#ferramentas {
+  border: 3px solid gray;
+  border-radius: 5px;
+  display: flex;
+  z-index: 1;
+}
+
+.separador {
+  position: relative;
+}
+
+.separador::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 35px;
+  background-color: #00000066;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#output {
+  width: 97%;
+  height: 400px;
+  border: 3px double black;
+  margin: 5px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+
+/* Progress */
+
+#carregamento {
+  border: 2px solid #3988bd;
+  border-radius: 5px;
+  background-color: var(--secondary);
+  backdrop-filter: blur(4px);
+  padding: 4px;
+  margin: 5px;
+
+  cursor: progress;
+  position: fixed;
+  left: center;
+  top: 50%;
+  display: none;
+  /* display: block */
+}
+
+#barra {
+  position: fixed;
+  width: 200px;
+  height: 20px;
+  background: #ddd;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  border-bottom: 2px solid #00000073;
+
+  margin: 5px;
+}
+
+#preenchimento {
+  position: absolute;
+  left: 60%;
+  width: 40%;
+  height: 100%;
+  background: #74b5d3;
+  border-radius: 15px;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "wiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "python main.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
